@@ -16,6 +16,11 @@ function fiveHeads() {
             } else {
                 headsCount = 0;
             }
+            if (attempts === 100){
+                reject('it took 100 attemps without 5 heads')
+            }
+            
+
         }
         resolve(`It took ${attempts} tries to flip five "heads"`) 
 
